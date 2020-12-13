@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF23PL85KH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-RF23PL85KH');
+    </script>
+    <title>Curve Daily Volume Traded</title>
+</head>
+<body>
+    <main>
+        <a href="https://curve.fi/" target="_blank" rel="noreferrer">
+            <img src="./img/logo.svg" alt="logo">
+        </a>
+        <div id="details">
+            <div id="title">Daily volume traded [USDT]</div>
+            <div id="btns">
+                <button class="btn active" value="pool3">pool3</button>
+                <button class="btn" value="ypool">ypool</button>
+            </div>
+        </div>
+        <div id="total"></div>
+        <div id="chart"></div>
+    </main>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

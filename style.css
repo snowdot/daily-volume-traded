@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+* {
+    box-sizing: border-box;
+    font-family: monospace, cursive;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black: hsla(0, 0%, 0%, 0.5);
+    --blue: hsla(238, 100%, 20%, 1);
+    --white: hsla(360, 100%, 100%, 1);
+    --gray: hsla(360, 100%, 100%, 0.1);
+    --green: hsla(146, 100%, 50%, 1);
+    --red: hsla(1, 100%, 50%, 1);
+}
+
+body {
+    background-color: var(--blue);
+    font-weight: lighter;
+    padding-top: 100px;
+}
+
+main {
+    width: 600px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100px;
+}
+
+#details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#btns {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+#btns button {
+    background-color:  var(--white);
+    border: 1px solid var(--white);
+    color: var(--blue);
+    cursor: pointer;
+    outline: none;
+    padding: 2px 4px;
+}
+
+#btns button.active {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+#title {
+    color: var(--white);
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#total {
+    color: var(--red);
+    text-transform: uppercase;
+}
+
+.chart {
+    display: block;
+    margin: 0 auto;
+    overflow: visible;
+}
+
+.chart-line {
+    fill: none;
+    stroke: var(--white);
+    stroke-width: 1px;
+}
+
+.xGrid .tick line, .yGrid .tick line {
+    stroke: var(--black);
+    stroke-dasharray: 2px;
+}
+
+.xFocus, .yFocus {
+    stroke: var(--black);
+    stroke-width: 1px;
+}
+
+.point {
+    fill: var(--green);
+}
+
+.xLabel-rect, .yLabel-rect {
+    fill: var(--green);
+}
+
+.xLabel-value, .yLabel-value {
+    font-size: 12px;
+    font-weight: bold;
+    fill: var(--black);
+    text-anchor: start;
+}
+
+.tick text {
+    color: var(--white);
+    font-size: 12px;
+}
+
+.tick line {
+    stroke: transparent;
+}
+
+.domain {
+    stroke: transparent;
+}
+
+.overlay {
+    fill: transparent;
+    cursor: crosshair;
+}
